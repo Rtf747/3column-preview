@@ -20,7 +20,6 @@ const luxuryLink = 'https://vuejs.org/';
 const Grid = styled.div`
  display: grid;
  grid-template-rows: 1fr 1fr 1fr;
- border: 1px solid black;
  font-family: 'Lexend Deca', sans-serif;
  font-size: 15px;
  margin: 3rem 1rem 3rem 1rem;

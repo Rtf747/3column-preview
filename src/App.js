@@ -14,7 +14,6 @@ const GlobalStyle = createGlobalStyle`
   color: hsl(0, 0%, 95%);
   background-color: rgb(242,242,242);
   box-sizing: border-box;
-  border: solid #5B6DCD 10px;
   width: 100%;
   height: 100%;
 
