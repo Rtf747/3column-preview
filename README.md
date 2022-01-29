@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Frontend Mentor - 3-column preview card component solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+-Mobile
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot 2022-01-28 at 18-48-35 React App](https://user-images.githubusercontent.com/10404257/151662390-ec8c0542-b1b4-4435-930a-5ca44e8e0f00.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-Desktop
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screen Shot 2022-01-26 at 19 30 25](https://user-images.githubusercontent.com/10404257/151662402-c5bf9154-f716-4c33-a094-316b0ef0ed26.png)
 
-### `npm run eject`
+### Links
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Solution URL: [Here](https://github.com/Rtf747/3column-preview)
+- Live Site URL: [Here](https://rtf747.github.io/3column-preview/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## My process
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Built with
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
 
-## Learn More
+### What I learned
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This time I started using styled components to have the code much more organized and easier to maintain. It was so much fun using CSS this way, I'm definitely going to keep using it! Although it is a bit strange not to have the classic style.css file.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Here I was doing some parameter passing and logic with ternaries in the CSS! 🤯 Surely there is a better way to do it, but for now that was the only way I saw to fix it with styled components.
 
-### Code Splitting
+```js
+const Container = styled.section`
+ display: flex;
+ flex-direction: column;
+ background-color: ${({ color }) => color};
+ border-top-left-radius: ${({ borderTopLeft }) =>
+  borderTopLeft ? borderTopLeft : '0px'};
+ border-bottom-left-radius: ${({ borderBottomLeft }) =>
+  borderBottomLeft ? borderBottomLeft : '0px'};
+ border-top-right-radius: ${({ borderTopRight }) =>
+  borderTopRight ? borderTopRight : '0px'};
+ border-bottom-right-radius: ${({ borderBottomRight }) =>
+  borderBottomRight ? borderBottomRight : '0px'};
+`;
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Continued development
 
-### Analyzing the Bundle Size
+The styled components are a great advance for the modularization and organization in the components, since they help us to have a greater control over the styles. I still can't get the most out of it, but I'm sure that with a lot of practice and study I'll make it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Useful resources
 
-### Making a Progressive Web App
+- [Styled Components](https://styled-components.com/) - Link to the official documentation of styled components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Frontend Mentor - [@Rtf747](https://www.frontendmentor.io/profile/Rtf747)
