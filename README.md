@@ -14,9 +14,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,83 +26,59 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+-Mobile
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Screenshot 2022-01-28 at 18-48-35 React App](https://user-images.githubusercontent.com/10404257/151662390-ec8c0542-b1b4-4435-930a-5ca44e8e0f00.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+-Desktop
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Screen Shot 2022-01-26 at 19 30 25](https://user-images.githubusercontent.com/10404257/151662402-c5bf9154-f716-4c33-a094-316b0ef0ed26.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Here](https://github.com/Rtf747/3column-preview)
+- Live Site URL: [Here](https://rtf747.github.io/3column-preview/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This time I started using styled components to have the code much more organized and easier to maintain. It was so much fun using CSS this way, I'm definitely going to keep using it! Although it is a bit strange not to have the classic style.css file.
 
-To see how you can add code snippets, see below:
+Here I was doing some parameter passing and logic with ternaries in the CSS! 🤯 Surely there is a better way to do it, but for now that was the only way I saw to fix it with styled components.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const Container = styled.section`
+ display: flex;
+ flex-direction: column;
+ background-color: ${({ color }) => color};
+ border-top-left-radius: ${({ borderTopLeft }) =>
+  borderTopLeft ? borderTopLeft : '0px'};
+ border-bottom-left-radius: ${({ borderBottomLeft }) =>
+  borderBottomLeft ? borderBottomLeft : '0px'};
+ border-top-right-radius: ${({ borderTopRight }) =>
+  borderTopRight ? borderTopRight : '0px'};
+ border-bottom-right-radius: ${({ borderBottomRight }) =>
+  borderBottomRight ? borderBottomRight : '0px'};
+`;
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+The styled components are a great advance for the modularization and organization in the components, since they help us to have a greater control over the styles. I still can't get the most out of it, but I'm sure that with a lot of practice and study I'll make it.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Styled Components](https://styled-components.com/) - Link to the official documentation of styled components.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@Rtf747](https://www.frontendmentor.io/profile/Rtf747)
